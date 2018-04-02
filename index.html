@@ -12,14 +12,55 @@
       <h1>Pick-a-Pizza&trade; App from PizzaCo!</h2>
       <div class="row">
         <div class="col-md-6">
-          <form id="new-pizza">
-            <!-- select pizza options -->
+          <form id="new-pizza"><br>
+            <!-- select pizza topping -->
             <p>What type of crust do you want?<p>
             <div class="radio">
             <label for="new-pizza-crust">
               <input type="radio" name="crust" value="regular" checked>
               Regular Crust</label>
             </div>
+            <div class="radio">
+            <label for="new-pizza-crust">
+              <input type="radio" name="crust" value="gluten-free">
+              Gluten-Free</label>
+            </div>
+            <div class="radio">
+            <label for="new-pizza-crust">
+              <input type="radio" name="crust" value="spinach">
+              Spinach Crust</label>
+            </div><br>
+            <!-- select pizza size -->
+            <p>What size do you want?<p>
+            <div class="radio">
+            <label for="new-pizza-size">
+              <input type="radio" name="size" value="large" checked>
+              Large</label>
+            </div>
+            <div class="radio">
+            <label for="new-pizza-size">
+              <input type="radio" name="size" value="medium">
+              Medium</label>
+            </div>
+            <div class="radio">
+            <label for="new-pizza-size">
+              <input type="radio" name="size" value="small">
+              Small</label>
+            </div><br>
+            <!-- select pizza toppings -->
+            <p>Which toppings do you want?</p>
+            <input type="checkbox" name="new-pizza-topping" value="pepperoni"> pepperoni<br>
+            <input type="checkbox" name="new-pizza-topping" value="sausage"> sausage<br>
+            <input type="checkbox" name="new-pizza-topping" value="jalapenos"> jalapenos<br>
+            <input type="checkbox" name="new-pizza-topping" value="ham"> ham<br>
+            <input type="checkbox" name="new-pizza-topping" value="pineapple"> pineapple<br>
+            <input type="checkbox" name="new-pizza-topping" value="ricotta"> ricotta<br>
+            <input type="checkbox" name="new-pizza-topping" value="green bell pepper"> green bell pepper<br>
+            <input type="checkbox" name="new-pizza-topping" value="honey"> honey<br><br>
+
+            <button type="submit" class="btn">Submit Your Order!</button>
+
+
           </form>
         </div>
       </div>
