@@ -49,21 +49,23 @@
             </div><br>
             <!-- select pizza toppings -->
             <p>Which toppings do you want?</p>
-            <input type="checkbox" name="new-pizza-topping" value="pepperoni"> pepperoni<br>
-            <input type="checkbox" name="new-pizza-topping" value="sausage"> sausage<br>
-            <input type="checkbox" name="new-pizza-topping" value="jalapenos"> jalapenos<br>
-            <input type="checkbox" name="new-pizza-topping" value="ham"> ham<br>
-            <input type="checkbox" name="new-pizza-topping" value="pineapple"> pineapple<br>
-            <input type="checkbox" name="new-pizza-topping" value="ricotta"> ricotta<br>
-            <input type="checkbox" name="new-pizza-topping" value="green bell pepper"> green bell pepper<br>
-            <input type="checkbox" name="new-pizza-topping" value="honey"> honey<br><br>
+            <input type="checkbox" name="new-pizza-topping" value=" pepperoni"> pepperoni<br>
+            <input type="checkbox" name="new-pizza-topping" value=" sausage"> sausage<br>
+            <input type="checkbox" name="new-pizza-topping" value=" jalapenos"> jalapenos<br>
+            <input type="checkbox" name="new-pizza-topping" value=" ham"> ham<br>
+            <input type="checkbox" name="new-pizza-topping" value=" pineapple"> pineapple<br>
+            <input type="checkbox" name="new-pizza-topping" value=" ricotta"> ricotta<br>
+            <input type="checkbox" name="new-pizza-topping" value=" green bell pepper"> green bell pepper<br>
+            <input type="checkbox" name="new-pizza-topping" value=" honey"> honey<br><br>
 
             <button type="submit" class="btn">Submit Your Order!</button>
 
-            <h2>Order:</h2>
+            <h2 class="orderConfirmation">Your Order is Confirmed!</h2>
             <ul id="showOrder">
 
             </ul>
+
+            <h3 class="orderConfirmation">Click <input id="refresh" class ="btn" type="button" value="here" onClick="window.location.reload()"> to order again!</h3>
 
           </form>
         </div>
