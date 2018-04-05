@@ -5,13 +5,10 @@ function Pizza (crust, size, toppings) {
   this.pizzaToppings = toppings;
 }
 
-<<<<<<< HEAD
-=======
 Pizza.prototype.fullOrder = function() {
   return "Crust: " + this.pizzaCrust + "</br>Size: " + this.pizzaSize + "</br>Toppings: " + this.pizzaToppings;
 }
 
->>>>>>> addPrototype
 //user interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
