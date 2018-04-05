@@ -5,6 +5,9 @@ function Pizza (crust, size, toppings) {
   this.pizzaToppings = toppings;
 }
 
+Pizza.prototype.fullOrder = function() {
+  return "Crust: " + this.pizzaCrust + "</br>Size: " + this.pizzaSize + "</br>Toppings: " + this.pizzaToppings;
+}
 
 //user interface logic
 $(document).ready(function() {
@@ -22,8 +25,7 @@ $(document).ready(function() {
       var newPizza = new Pizza(crust, size, toppings);
 
       $(".orderConfirmation").show();
-      $("ul#showOrder").append("<li><span class='order'>Crust: "+newPizza.pizzaCrust+"</span></li>");
-      $("ul#showOrder").append("<li><span class='order'>Size: "+newPizza.pizzaSize+"</span></li>");
-      $("ul#showOrder").append("<li><span class='order'>Toppings :"+newPizza.pizzaToppings+"</span></li>");
+      $("ul#showOrder").append("<li><span class='order'>"+newPizza.fullOrder()+"</span></li>");
+
   });
 });
