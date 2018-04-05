@@ -5,7 +5,6 @@ function Pizza (crust, size, toppings) {
   this.pizzaToppings = toppings;
 }
 
-
 //user interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
