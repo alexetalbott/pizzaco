@@ -1,8 +1,9 @@
 //business logic
-function Pizza (crust, size, toppings) {
+function Pizza (crust, size, toppings, price) {
   this.pizzaCrust = crust;
   this.pizzaSize = size;
   this.pizzaToppings = toppings;
+  this.price = price;
 }
 
 Pizza.prototype.fullOrder = function() {
@@ -22,10 +23,12 @@ $(document).ready(function() {
       $("input:checkbox[name=new-pizza-topping]:checked").each(function(){
         toppings.push($(this).val());
       });
-      var newPizza = new Pizza(crust, size, toppings);
+      //
+      var price = 5 + toppings.length;
+      var newPizza = new Pizza(crust, size, toppings, price);
 
       $(".orderConfirmation").show();
       $("ul#showOrder").append("<li><span class='order'>"+newPizza.fullOrder()+"</span></li>");
-
+      $("ul#showOrder").append("</br><li><span class='order'><strong>Subtotal</strong>: $"+newPizza.price+"</span></li>");
   });
 });
