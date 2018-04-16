@@ -10,6 +10,10 @@ Pizza.prototype.fullOrder = function() {
   return "Crust: " + this.pizzaCrust + "</br>Size: " + this.pizzaSize + "</br>Toppings: " + this.pizzaToppings;
 }
 
+Pizza.prototype.subtotal = function () {
+  return this.pizzaToppings.length + 5;
+}
+
 //user interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
@@ -29,6 +33,6 @@ $(document).ready(function() {
 
       $(".orderConfirmation").show();
       $("ul#showOrder").append("<li><span class='order'>"+newPizza.fullOrder()+"</span></li>");
-      $("ul#showOrder").append("</br><li><span class='order'><strong>Subtotal</strong>: $"+newPizza.price+"</span></li>");
+      $("ul#showOrder").append("</br><li><span class='order'><strong>Subtotal</strong>: $"+newPizza.subtotal()+"</span></li>");
   });
 });
